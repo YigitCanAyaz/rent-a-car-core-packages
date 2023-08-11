@@ -1,0 +1,25 @@
+﻿using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
+
+namespace Core.Persistence.Repositories;
+
+public class Entity<TId>
+{
+    public TId Id { get; set; }
+    public DateTime CreatedDate { get; set; }
+    public DateTime? UpdatedDate { get; set; }
+    public DateTime? DeletedDate { get; set; }
+
+    public Entity()
+    {
+        Id = default; // hiçbir şey verilmezse default'u neyse 0 gibi onu versin
+    }
+
+    public Entity(TId id)
+    {
+        Id = id;
+    }
+}
