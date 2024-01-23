@@ -15,7 +15,7 @@ public class Entity<TId> : IEntityTimestamps
 
     public Entity()
     {
-        Id = default; // hiçbir şey verilmezse default'u neyse 0 gibi onu versin
+        Id = default; // hiçbir şey verilmezse default'u neyse 0 gibi onu versin, türünün default değeri
     }
 
     public Entity(TId id)

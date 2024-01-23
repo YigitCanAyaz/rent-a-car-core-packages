@@ -7,6 +7,7 @@ using System.Threading.Tasks;
 
 namespace Core.Persistence.Paging
 {
+    // Veritabanından tüm veri gelmesin, sadece istediğimiz kısmı gelsin
     public static class IQueryablePaginateExtensions
     {
         public static async Task<Paginate<T>> ToPaginateAsync<T>(
